@@ -1,0 +1,151 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "8the_prision"
+	group: "3E586F2160161EEA"
+	icon: "graveyard:dark_iron_bars"
+	id: "419EFD597601A50B"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 3.0d
+		hover: [ ]
+		image: "minecells:item/blood_sword"
+		rotation: 0.0d
+		width: 3.0d
+		x: -3.0d
+		y: -1.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0D23A31DAF3866F4"
+			rewards: [{
+				id: "4A4473CE89392149"
+				item: "minecells:health_flask"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Портал в &8Тюремное&r измерение появляется случайным образом по всему &aМиру&r. Если вы когда-либо брали &bалмаз&r, портал будет активирован."
+			tasks: [{
+				dimension: "minecells:prison"
+				icon: "graveyard:dark_iron_bars"
+				id: "0E868C4F785876CA"
+				title: "Войти в зеленый портал"
+				type: "dimension"
+			}]
+			title: "Войти в Тюремное измерение"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D23A31DAF3866F4"]
+			id: "056835280827D016"
+			rewards: [
+				{
+					id: "2FCF73BFB5EB1746"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "40247E988E658E5A"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Появляется в &bЛогове&r, которое можно найти под землей в &8Тюремном&r измерении. Чтобы нанести урон &dКонъюнктивиусу&r, сначала убейте щупальца."
+			tasks: [{
+				entity: "minecells:conjunctivius"
+				icon: {
+					Count: 1b
+					id: "minecells:tentacle"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "60BB85E2901C9AFB"
+				title: "Победить Конъюнктивиуса"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lБитва с боссом: &d&lКонъюнктивиус"
+			x: -2.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D23A31DAF3866F4"]
+			id: "3C8D91F2793CECAD"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Пройдя через лифт на последнем этаже тюрьмы, вы попадете на Тропу обречённых.\\n \\n&eРекомендуется взять с собой камень переноса или карманную червоточину, чтобы вернуться домой."
+			tasks: [{
+				dimension: "minecells:promenade"
+				icon: "minecells:promenade_torch"
+				id: "3D4982DEF40E26A6"
+				title: "Посетите Тропу Обречённых"
+				type: "dimension"
+			}]
+			title: "&7Посетить Тропу Обречённых"
+			x: 2.4642857142857153d
+			y: 1.5178571428571388d
+		}
+		{
+			dependencies: ["58E9FDE95BB414C8"]
+			id: "618580FC7F5FFBD0"
+			subtitle: "Клеточный верстак позволяет вам изготавливать различное оружие ближнего и дальнего боя для вашего арсенала в Mine Cells."
+			tasks: [{
+				icon: "minecells:cell_crafter"
+				id: "57DD47C8EC79E9E4"
+				observe_type: 0
+				timer: 0L
+				title: "Используйте Клеточный верстак"
+				to_observe: "minecells:cell_crafter"
+				type: "observation"
+			}]
+			title: "Используйте &cКлеточный верстак"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0D23A31DAF3866F4"]
+			id: "58E9FDE95BB414C8"
+			subtitle: "Клетки монстров выпадают из монстров в &8Тюремном &rизмерении."
+			tasks: [{
+				id: "5A6C4572411834AA"
+				item: "minecells:monster_cell"
+				type: "item"
+			}]
+			title: "Получите Monster Cell"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58E9FDE95BB414C8"]
+			id: "364E9528AE5F1047"
+			subtitle: "Некоторое оружие, которое можно сделать на Клеточном верстаке, требует для изготовления пропитанную клетаками сталь. Имейте это в виду."
+			tasks: [{
+				id: "492AFFEA634E0376"
+				item: "minecells:cell_infused_steel"
+				type: "item"
+			}]
+			title: "Создайте несколько &bПропитанной клетками &rСталь"
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: " &7Тюрьма"
+}

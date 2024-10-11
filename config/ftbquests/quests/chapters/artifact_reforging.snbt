@@ -1,0 +1,328 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "artifact_reforging"
+	group: "3DBADFFDA1FDAD84"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "alloy_forgery:block/polished_blackstone_forge_controller_front_on"
+		}
+	}
+	id: "13D4D78DE7B38A80"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/campfire_fire"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "decorative_blocks:block/bonfire_x_alt"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.0357142857142847d
+			y: 1.8642857142857139d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Требуется завершение &nГлавы I&r&d Вторжения бездны."
+				""
+				"&7Расплавленное ядро — это мощный артефакт, созданный в глубинах вулкана Камнезола; &cВааз&7."
+				"&7С его помощью можно создать мощное и уникальное артефактное оружие, обладающее особыми способностями и привязанное к твоей душе, что делает его доступным только тому, кто его выковал."
+				""
+				"&bОБитые остатки&7 могут быть использованы для починки и перековки этого оружия. Также стоит создать &6Катализатор закалки&7, чтобы сделать его неразрушимым."
+			]
+			icon: "prominent:molten_core"
+			id: "6AD67E7C8CD78371"
+			rewards: [
+				{
+					id: "5562501929CD8443"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 10
+					id: "369B6883C30000A8"
+					item: "prominent:encased_remnant"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "&8[Нажмите, чтобы прочитать историю и инструкции]"
+			tasks: [
+				{
+					id: "035441107821B3C1"
+					item: "prominent:molten_core"
+					type: "item"
+				}
+				{
+					id: "56A625D024CDB2DE"
+					item: "things:hardening_catalyst"
+					title: "Создайте Катализатор закалки"
+					type: "item"
+				}
+			]
+			title: "&cКузня С'Келлака"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [
+				"&eМожет быть выковано с использованием Эссенции Гнева и Пробужденного Клинка Лича, вместе с Расплавленным ядром."
+				""
+				""
+				"&8Этот предмет является данью уважения Ледяной Скорби из World of Warcraft."
+			]
+			id: "341DB238063321BF"
+			shape: "hexagon"
+			subtitle: "Проклятый меч, хранящий силу вечной зимы. Фростморн — рунический артефакт, пропитанный магией ледяной души. Легенда гласит, что тот, кто им владеет, станет правителем Рыцарей Смерти, Королем-личом."
+			tasks: [{
+				id: "7F239D03EBB09534"
+				item: {
+					Count: 1b
+					id: "prominent:frostmourne"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [
+				""
+				"&eМожет быть выковано с использованием двух Пылающих топорищ вместе с Расплавленным ядром."
+				""
+				""
+				"&8Этот предмет является данью уважения Фир'алату из World of Warcraft."
+			]
+			id: "6D1B83D633AB7558"
+			shape: "hexagon"
+			subtitle: "Мучительное оружие огня души, которое дает большое сопротивление своему владельцу. Ориентировано на танкование, но имеет большой урон от огня."
+			tasks: [{
+				id: "52D24DAEDFD19F9A"
+				item: {
+					Count: 1b
+					id: "prominent:fyralath"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [
+				""
+				"&eМожет быть выковано с использованием Демонической эссенции и Раздирателя Душ, вместе с Расплавленным ядром."
+			]
+			id: "5D03084D09D2A997"
+			shape: "hexagon"
+			subtitle: "&7А'Жар — демон, заточенный в форму косы С'келлаком, что делает это оружие огня души спорным союзником; будьте осторожны при его использовании, потому что оно попытается предать вас."
+			tasks: [{
+				id: "43F5AAA9405EE27D"
+				item: {
+					Count: 1b
+					id: "prominent:azhar"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: ["&eМожет быть выковано с использованием Эссенции Славы и Starforge, вместе с Расплавленным ядром."]
+			id: "1CE7763C1889255C"
+			shape: "hexagon"
+			subtitle: "Созданное из остатков умирающей звезды, Сверхновая — это астральное оружие, способное наносить урон всеми магическими элементами и уничтожать любые цели астральными взрывами."
+			tasks: [{
+				id: "6B6E9C04C7D69E89"
+				item: {
+					Count: 1b
+					id: "prominent:supernova"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [
+				""
+				"&eМожет быть выковано с использованием Эссенции Гнева и Кулаками Ярости, вместе с Расплавленным ядром."
+			]
+			id: "211326D6B6C33A25"
+			shape: "hexagon"
+			subtitle: "Этот кулак душевного огня может привести любого в ярость, если также использовать его сестринское оружие - Кулак Ярости, что делает его смертельным выбором для мастеров боевых искусств, благодаря мощным ударам, сжигающим душу врага."
+			tasks: [{
+				id: "3D838C3D611886A5"
+				item: {
+					Count: 1b
+					id: "prominent:fury_of_a_thousand_fists"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [
+				""
+				"&eМожет быть выковано с использованием Демонической эссенции и Громовержца, вместе с Расплавленным ядром."
+			]
+			id: "50EB37F863EA810B"
+			shape: "hexagon"
+			subtitle: "Раскалённое древковое оружие, созданное из Камнезола и Ноктистали, насыщенное молнией, использовавшееся давно ушедшим лидером расы Серконид."
+			tasks: [{
+				id: "22CACA94593603A7"
+				item: {
+					Count: 1b
+					id: "prominent:thunderwrath"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [
+				""
+				"&eМожет быть выковано с использованием Эссенции славы и Эссенции гнева. Чтобы освободить двойные мечи, необходимо использовать Essence of Ash'edar."
+			]
+			id: "29425DCD7396CE49"
+			shape: "hexagon"
+			subtitle: "&7Пара астральных мечей-близнецов, которые черпают силу Солнца и Луны, используя магию Тайн и Огня."
+			tasks: [{
+				id: "37DE8677AEA5721E"
+				item: "prominent:ashedar_essence"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "prominent:item/cinderstone_trophy"
+				}
+			}
+			id: "6313DD656A95E8C0"
+			shape: "hexagon"
+			subtitle: "&7Этот артефакт куёт С'келлак."
+			tasks: [{
+				id: "22C4A6A4C9A0B862"
+				title: "&6Скоро!"
+				type: "custom"
+			}]
+			title: "&6&kEkavar, Great Cinderstone Staff"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [""]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "prominent:item/cinderstone_trophy"
+				}
+			}
+			id: "4C2EFCB93288D047"
+			shape: "hexagon"
+			subtitle: "&7Этот артефакт куёт С'келлак."
+			tasks: [{
+				id: "02901AAD817F6D45"
+				title: "&6Скоро!"
+				type: "custom"
+			}]
+			title: "&9&kOrion, The Hunter"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AD67E7C8CD78371"]
+			description: [
+				"&7Все артефакты можно улучшать, используя их &6Дерево улучшений&7."
+				""
+				"&7Как только ты выкуешь свой артефакт, ты откроешь его дерево улучшений. Ты можешь получить доступ к нему, нажав &6N&7, и выбрав иконку Расплавленного ядра в левом верхнем углу."
+				""
+				"&7Все деревья улучшений содержат до &67 узлов&7, которые можно выбрать, следуя разным путям."
+				""
+				"&7Чтобы разблокировать узлы, необходимо усилить артефакт, используя &6Расплавленные остатки&7, которые получаются за квесты или создаются с помощью Мифической эссенции."
+			]
+			icon: "prominent:molten_remnant"
+			id: "3453FD3CA0E3233A"
+			rewards: [{
+				id: "76103A7FBD55037B"
+				item: "prominent:molten_remnant"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.65d
+			subtitle: "&8[Нажмите, чтобы получить инструкции]"
+			tasks: [
+				{
+					id: "559B1BA85C721A6D"
+					title: "Продолжить"
+					type: "checkmark"
+				}
+				{
+					id: "7F2A2E7F3E7BF665"
+					item: "prominent:infused_molten_remnant"
+					title: "&eПолучите Отлитый расплавленный остаток с Кампании."
+					type: "item"
+				}
+			]
+			title: "&cПрокачай свой артефакт"
+			x: 0.0d
+			y: 2.475d
+		}
+	]
+	title: " &c&lКузница С'келлака"
+}

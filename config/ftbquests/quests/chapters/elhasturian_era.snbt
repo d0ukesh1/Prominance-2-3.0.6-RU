@@ -1,0 +1,278 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "elhasturian_era"
+	group: "3DBADFFDA1FDAD84"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "eldritch_end:textures/mob_effect/hastur_presence.png"
+		}
+	}
+	id: "38345D0552E8A4AF"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 1.0d
+		hover: [ ]
+		image: "derelict:item/fancy_cobweb_with_spider_nest"
+		rotation: 0.0d
+		width: 1.0d
+		x: 0.2544642857142847d
+		y: -1.8125d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&cЗавершите все главы Вторжения бездны, чтобы разблокировать сюжетную линию этого дополнения."]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "eldritch_end:textures/mob_effect/hastur_presence.png"
+				}
+			}
+			id: "73DA5990952CEA35"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				advancement: "prominent:end_of_voids_invasion"
+				criterion: ""
+				id: "190537CB8ABEDC05"
+				title: "&dЗавершите этап Void's Invasion"
+				type: "advancement"
+			}]
+			title: "&eХастурианская эра"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73DA5990952CEA35"]
+			description: [
+				"&7&oЭоны назад С'келлак сражался с мистическими существами, побеждив и заперев первобытное существо К'тулху."
+				""
+				"&7&oПока его последователи бежали, цепи, сковывающие его сводного брата, высокого монстра в капюшоне с щупальцами, были разорваны. С'келлак не смог остановить его, и на протяжении эонов он не видел его."
+				""
+				"&8(1/2)"
+				"{@pagebreak}"
+				"&7&oТеперь, когда экспансия оставшихся сил бездны началась, все миры вновь ослабли."
+				""
+				"&e&oКороль в Желтом вернулся и не остановится, пока всё не падет под его властью."
+				""
+				"&8(2/2)"
+			]
+			hide: true
+			icon: "ftbquests:book"
+			id: "579138B8DB19724C"
+			shape: "diamond"
+			size: 1.25d
+			subtitle: "&8[Нажмите, чтобы прочитать историю]"
+			tasks: [{
+				id: "3E72FE8109B34FDF"
+				title: "Продолжить"
+				type: "checkmark"
+			}]
+			title: "&6&lГлава I: &e&lТень за горизонтом"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["579138B8DB19724C"]
+			description: [
+				"&8Письмо из Камнезола гласит:"
+				""
+				"&7&o\"Приветствую, Чемпион,"
+				""
+				"&7&oЯ подтвердил, что это он — прародитель всех нечестивых вещей, известное как Хастур."
+				""
+				"&7&oОбычный мир небезопасен, Хастур превосходен в искажении умов смертных. Мне нужно, чтобы ты прибыл в Вааз как можно скорее, прежде чем кто-то из его извращённых слуг придет за тобой."
+				""
+				"&7&oИспользуй Маяк Надежды в обычном мире, и я приведу тебя в Вааз."
+				""
+				"&7&oТакже зачаруй своё оружие Небесной карой, последователи Хастура — нежить. Ты должен быть готов к худшему."
+			]
+			hide: true
+			icon: "minecraft:paper"
+			id: "440126C71C47DB94"
+			rewards: [{
+				id: "3BA7B87E636751B8"
+				item: "prominent:beacon_of_hope"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "&8[Нажмите, чтобы прочитать сообщение]"
+			tasks: [{
+				id: "2FDEA9ADE1778463"
+				title: "Продолжить"
+				type: "checkmark"
+			}]
+			title: "&eПослание от С'келлака"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7E7462C4751E0C1B"]
+			description: [
+				"&eНеобходимый уровень: 65"
+				""
+				"&7Бывший архимаг и лидер Колдунов, убитый от рук Защитников Вааза, был воскрешен самим Хастуром."
+				""
+				"&7Теперь, будучи членом культа и наделенный силой Хастура, он был выбран, чтобы помешать планам С'келлака. Похищая и убивая любого, кто пытается отправиться в Глубины Синдерстона."
+				""
+				"Воспользуйтесь Небесной карой, чтобы сломать его барьер, если у вас нет необходимой силы заклинаний!"
+			]
+			hide: true
+			id: "2D24C45915E27222"
+			rewards: [
+				{
+					count: 3
+					id: "6E0F1E016DBC1DDF"
+					item: "prominent:infused_molten_remnant"
+					type: "item"
+				}
+				{
+					id: "1130E573AFE26B87"
+					item: "prominent:cinderstone_trophy"
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "&8[Нажмите, чтобы прочитать историю и указания]"
+			tasks: [{
+				entity: "sbprom:hasturmagus"
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "eldritch_end:item/hastur_crown"
+					}
+				}
+				id: "3247325A58CE070C"
+				title: "&eПобедите Воскресшего Магуса, Гу'маса"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&6Гу'мас, Падший Архимаг"
+			x: 0.0d
+			y: 5.625d
+		}
+		{
+			dependencies: ["440126C71C47DB94"]
+			description: ["&7Подай сигнал с помощью этого маяка в Верхнем мире, чтобы отправиться в Вааз и встретиться с С'келлаком."]
+			icon: "prominent:beacon_of_hope"
+			id: "7E7462C4751E0C1B"
+			rewards: [{
+				id: "289A62D9E5C0F7C8"
+				item: "prominent:molten_remnant"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "&8[Нажмите, чтобы прочитать указания]"
+			tasks: [{
+				advancement: "prominent:beacon_of_hope"
+				criterion: ""
+				icon: "prominent:beacon_of_hope"
+				id: "52B65A162D7F91D6"
+				title: "&eИспользуйте маяк надежды и отправтесь в Вааз"
+				type: "advancement"
+			}]
+			title: "&eВааз, первобытный вулкан Камнезола"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["579138B8DB19724C"]
+			description: [
+				"&7&oИнфузии Порчи можно использовать для добавления порчи к оружию и частям доспехов, что полезно для способностей, масштабируемых по порче."
+				""
+				"&7&oАктивные способности из Дерева талантов имеют специальные эффекты и масштабируются в зависимости от порчи."
+				""
+				"&7Кузнечный шаблон можно найти в качестве добычи в городах Края."
+				""
+				"&eИспользовать на Столе Кузнеца вместе с нужным предметом и материалом."
+				""
+				"&eВы можете инфузировать следующие материалы:"
+				"&7- Конечность Помрачения &8(+10)"
+				"&7- Сердце Помрачения &8(+20)"
+				"&7- Кс'ал, Безликий Глаз &8(+35)"
+			]
+			hide: true
+			id: "34CA824A855AF82F"
+			rewards: [{
+				id: "54A81371F005122B"
+				item: "prominent:molten_remnant"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "&8[Нажмите, чтобы прочитать указания]"
+			tasks: [{
+				id: "14FE830D52563C60"
+				item: "eldritch_end:corruption_upgrade_pattern"
+				type: "item"
+			}]
+			title: "&eТропа Порчи: Инфузии"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["579138B8DB19724C"]
+			description: [
+				"&7&oИнфузии Этира могут быть использованы для добавления сопротивления порче у экипировки, чтобы компенсировать ваше общее количество порчи."
+				""
+				"&7&oХотя способности масштабируются с порчей, негативные эффекты основаны на вашей &nОбщей Порче&r&7&o, которая учитывает количество текущего этира в экипировке."
+				""
+				"&7Кузнечный шаблон можно найти в качестве добычи в городах Края."
+				""
+				"&eИспользуйте на Столе Кузнеца вместе с желаемым предметом и материалом."
+				""
+				"&eВы можете инфузировать следующие материалы:"
+				"&7- Слиток Этира &8(+10)"
+			]
+			hide: true
+			id: "66FA883FD0CBC7E7"
+			rewards: [{
+				id: "0CF598B77802C9EA"
+				item: "prominent:molten_remnant"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "&8[Нажмите, чтобы прочитать указания]"
+			tasks: [{
+				id: "40986AEC7D527067"
+				item: "eldritch_end:etyr_upgrade_pattern"
+				type: "item"
+			}]
+			title: "&eТропа Этира: Инфузии"
+			x: -2.0d
+			y: 1.0d
+		}
+	{
+			dependencies: ["2D24C45915E27222"]
+			description: [
+				"&7Маяк Надежды сломан, теперь, не имея возможности связаться с С'келлаком, вам нужно будет найти способ добраться до Ваза самостоятельно."
+				""
+				"&eЭта сюжетная линия появится в версии v3.1.0 вместе с измерением Пепельных Глубин и столицей Ваза!"
+				""
+				"&6Следите за новостями!"
+			]
+			hide: true
+			icon: "prominent:cinderstone_trophy"
+			id: "5E4919750C5CE35D"
+			shape: "hexagon"
+			subtitle: "&8[Click to read lore]"
+			tasks: [{
+				id: "539D6D4124775E80"
+				title: "&eComing on v3.1.0"
+				type: "custom"
+			}]
+			title: "&eПутешествие в Вааз"
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+	title: " &e&lХастурианская эра"
+}

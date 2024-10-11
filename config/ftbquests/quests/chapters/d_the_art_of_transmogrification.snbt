@@ -1,0 +1,112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "d_the_art_of_transmogrification"
+	group: "244F516C4853FD2F"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "zenith:items/gems/endersurge"
+		}
+	}
+	id: "0EF4DA402B0EFC8E"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "simplyswords:item/lichblade_eyes"
+			rotation: 0.0d
+			width: 0.016666666666666666d
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "botania:block/purple_mystical_flower"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.062159863945574045d
+			y: -3.5918367346938815d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				""
+				"&dТрансмогрификация&7 — это тип магии, который позволяет вам &eизменять форму любого объекта, не меняя его функции&7, позволяя вам маскировать ваши предметы под другие, включая оружие и доспехи. Это не дает никаких преимуществ, кроме чисто косметических."
+			]
+			icon: "minecraft:amethyst_cluster"
+			id: "1F3A415DDF6355EE"
+			shape: "hexagon"
+			subtitle: "&8[Нажмите, чтобы прочитать информацию]"
+			tasks: [{
+				id: "138402A5BE9F444A"
+				title: "Искусство перевоплощения"
+				type: "checkmark"
+			}]
+			title: "&eИскусство превращения"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F3A415DDF6355EE"]
+			description: [
+				""
+				"&7Для начала вам нужно создать &dСтол трансмогрификации&7. Эта магия основана на &dАметисте&7, поэтому вам придется получать его каждый раз, когда вы захотите преобразовать какой-либо предмет."
+				""
+				"Никакие предметы не будут израсходованы, но для изменения формы вам необходимо будет владеть желаемым предметом."
+			]
+			id: "09C318161E20A39E"
+			rewards: [{
+				id: "5E60EBADBFED48BC"
+				type: "xp"
+				xp: 90
+			}]
+			shape: "diamond"
+			subtitle: "&8[Нажмите, чтобы прочитать информацию]"
+			tasks: [{
+				id: "07DDEFBFD93B4F74"
+				item: "transmog:transmogrification_table"
+				type: "item"
+			}]
+			title: "&dТрансмогрификации!"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["09C318161E20A39E"]
+			description: [
+				"&7Если вы не хотите показывать часть брони или оружие, вы можете скрыть эти предметы!"
+				""
+				"&7Используя &dФрагмент Пустоты&7 в качестве трансмогрифицируемого материала"
+			]
+			id: "6A69BEA7C1E7E1FD"
+			rewards: [{
+				id: "0778651DAD1A18EA"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "diamond"
+			subtitle: "&8[Нажмите, чтобы прочитать информацию]"
+			tasks: [{
+				id: "0D1D91DEF701EFDA"
+				item: "transmog:void_fragment"
+				type: "item"
+			}]
+			title: "&dИллюзия Ничто"
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "&d Трансмогрификация"
+}

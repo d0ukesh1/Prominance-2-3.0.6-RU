@@ -1,0 +1,1557 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gear_mariums_soulslike_weaponry"
+	group: "555B69C1AF8C1C7F"
+	icon: "soulsweapons:lost_soul"
+	id: "580F3D6E25D65E2C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5DFDAAA27B3775A3"]
+			disable_toast: true
+			id: "26C8BD551FCBAF73"
+			rewards: [{
+				id: "785C021A2B2B0D02"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Эти два камня будут иметь важное значение в создании вашего духовного снаряжения, не забывайте собирать много."
+			tasks: [
+				{
+					id: "3ECB3F6B6447E99A"
+					item: "soulsweapons:moonstone"
+					type: "item"
+				}
+				{
+					id: "1351A284A06C68CF"
+					item: "soulsweapons:verglas"
+					type: "item"
+				}
+			]
+			title: "Лунный Источник"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "268F53C03707BD12"
+			rewards: [{
+				id: "3C0082317FD109A3"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "Потерянные души — еще один источник энергии для создания экипировки и блоков душ. Их можно получить, переплавив песок душ."
+			tasks: [{
+				count: 16L
+				id: "3F40947A53DAE566"
+				item: "soulsweapons:lost_soul"
+				type: "item"
+			}]
+			title: "Создание Души"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["268F53C03707BD12"]
+			dependency_requirement: "one_completed"
+			id: "2C1F39A39A290603"
+			subtitle: "Слитки душ являются одним из основных ингредиентов при создании снаряжения душ, поскольку они содержат сущность потерянных душ."
+			tasks: [{
+				id: "3B91CBD4E6AD762A"
+				item: "soulsweapons:soul_ingot"
+				type: "item"
+			}]
+			title: "Живое железо"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["268F53C03707BD12"]
+			id: "3C8F644900CAEDC9"
+			rewards: [{
+				id: "56007B4A26AD8271"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Декоративные блоки, используемые в некоторых структурах великих монстров, спрятанных. Отлично подходят для строительной темы."
+			tasks: [
+				{
+					id: "1A1CDB9DCAB3A785"
+					item: "soulsweapons:infused_blackstone"
+					type: "item"
+				}
+				{
+					id: "1A58E3C7E4B7AD96"
+					item: "soulsweapons:cracked_infused_blackstone"
+					type: "item"
+				}
+				{
+					id: "74F5B58E2A13C506"
+					item: "soulsweapons:soulfire_stain"
+					type: "item"
+				}
+				{
+					id: "2C0D1B9FCC2059F1"
+					item: "soulsweapons:soul_lamp"
+					type: "item"
+				}
+			]
+			title: "Строительные блоки души"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["268F53C03707BD12"]
+			id: "641AF242F215A514"
+			rewards: [{
+				id: "4256FBD3DE39ABB6"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Эти серебряные пули будут очень важны для вашего оружия дальнего боя, поскольку они являются основным применением таких пуль. Серебряные пули могут быть дешевыми, но в зависимости от того, как часто вы их используете, они станут вашим долгом."
+			tasks: [{
+				count: 10L
+				id: "56ADA0DBFA97A758"
+				item: "soulsweapons:silver_bullet"
+				type: "item"
+			}]
+			title: "Душевные Патроны"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["641AF242F215A514"]
+			hide_text_until_complete: false
+			id: "2F653991D06FC852"
+			rewards: [
+				{
+					id: "2154D2B50ECBCC1F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "3294068AD2339759"
+					item: "soulsweapons:silver_bullet"
+					type: "item"
+				}
+			]
+			subtitle: "Пистолет «Охотник» — простое огнестрельное оружие, использующее серебряные пули, но имеющее довольно быструю перезарядку."
+			tasks: [{
+				id: "604F0DEC55BB9A81"
+				item: {
+					Count: 1b
+					id: "soulsweapons:hunter_pistol"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Бум! Выстрел в голову!"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["641AF242F215A514"]
+			id: "09BB4C83D6205DF4"
+			rewards: [
+				{
+					id: "5F18ED75F44EC1FE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "4EEE7B3CDFC18745"
+					item: "soulsweapons:silver_bullet"
+					type: "item"
+				}
+			]
+			subtitle: "Охотничий мушкетон — это ружье, стреляющее серебряными пулями по целям."
+			tasks: [{
+				id: "09F0E4B368AEA5DB"
+				item: {
+					Count: 1b
+					id: "soulsweapons:blunderbuss"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Невозможно разговаривать с человеком, если у него в руке дробовик."
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["641AF242F215A514"]
+			id: "63BD2F237D30E20A"
+			rewards: [
+				{
+					id: "5E238F14496E3837"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 10
+					id: "085897E47ABD3291"
+					item: "soulsweapons:silver_bullet"
+					type: "item"
+				}
+			]
+			subtitle: "Охотничья пушка — это тяжелое оружие, для выстрела которому требуется 10 серебряных пуль, поскольку оно объединяет все пули в один выстрел-ядро. У нее долгая перезарядка, поэтому вы не сможете стрелять из нее быстрой последовательностью."
+			tasks: [{
+				id: "7A38B94629479054"
+				item: {
+					Count: 1b
+					id: "soulsweapons:hunter_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Ходячий Мэн-О-Вар"
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["641AF242F215A514"]
+			hide_text_until_complete: false
+			id: "53EB43DACB33BA8C"
+			rewards: [
+				{
+					id: "5B0897D5F4B981FC"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 5
+					id: "46C912306317578D"
+					item: "soulsweapons:silver_bullet"
+					type: "item"
+				}
+			]
+			subtitle: "Пулемет Гатлинга — это тяжелое оружие, которому потребуется время, чтобы зарядиться и начать стрелять в быстром темпе. Он быстро съест ваши пули, поэтому обязательно используйте это оружие только тогда, когда у вас много серебряных пуль."
+			tasks: [{
+				id: "6002A26D3270EC99"
+				item: {
+					Count: 1b
+					id: "soulsweapons:gatling_gun"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Поздоровайтесь с моим маленьким другом!"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			id: "1430801A35C89C20"
+			rewards: [{
+				id: "54013FCD1E8821B9"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "Да, вы читали, это Большой Чунгус, соберите 9 изумрудов, убивая Чунгусов, и создайте музыкальный диск."
+			tasks: [{
+				count: 9L
+				id: "2C60636D9E1B1A87"
+				item: "soulsweapons:chungus_emerald"
+				type: "item"
+			}]
+			title: "Сезон охоты на кроликов"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2C1F39A39A290603"]
+			id: "38071F25062C6A80"
+			rewards: [{
+				id: "02159359C701600D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Дешевые имитации того, чем является настоящее снаряжение души, используемое павшими бойцами, такими как Ремнанты."
+			tasks: [
+				{
+					id: "43A7A694636F3248"
+					item: {
+						Count: 1b
+						id: "soulsweapons:translucent_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "347FCE8A574D7164"
+					item: {
+						Count: 1b
+						id: "soulsweapons:translucent_glaive"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29F5B7F9F9600D55"
+					item: {
+						Count: 1b
+						id: "soulsweapons:translucent_double_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ложное оружие души"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "306D0FC3908C6348"
+			subtitle: "Эти инструменты настолько прочны, что, возможно, даже прочнее алмаза."
+			tasks: [
+				{
+					id: "514C65E9419D368B"
+					item: {
+						Count: 1b
+						id: "soulsweapons:moonstone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D827E4B76662EB0"
+					item: {
+						Count: 1b
+						id: "soulsweapons:moonstone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C57C24A8D85201D"
+					item: {
+						Count: 1b
+						id: "soulsweapons:moonstone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "139C4D78DD1277AE"
+					item: {
+						Count: 1b
+						id: "soulsweapons:moonstone_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Лунные инструменты"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "731E965C4BF7565E"
+			rewards: [{
+				id: "0659FB40CE13B9A5"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Такой своеобразный компас, кажется, что он указывает куда-то вдаль. Куда он указывает?"
+			tasks: [{
+				id: "25B8B67FB1EA4200"
+				item: "soulsweapons:boss_compass"
+				type: "item"
+			}]
+			title: "Путеводная Луна"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["731E965C4BF7565E"]
+			icon: "graveyard:leaning_skeleton"
+			id: "1EDBB06BF4D86561"
+			rewards: [{
+				id: "2D16503EB0521936"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "Здесь покоится великий чемпион, неспособный обрести покой и упокоение. Вы должны убить его и отправить его тело обратно в землю."
+			tasks: [{
+				id: "666236AD26DCF0C8"
+				structure: "soulsweapons:champions_graves"
+				title: "Найдите могилу чемпиона"
+				type: "structure"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["731E965C4BF7565E"]
+			icon: "soulsweapons:cracked_infused_blackstone"
+			id: "4667630C9656EDDD"
+			rewards: [{
+				id: "75E4B9F9964605B9"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "Вот король, который потерял все, положил конец своему ложному правлению и вышел победителем."
+			tasks: [{
+				entity: "soulsweapons:accursed_lord_boss"
+				id: "54E0D07EC0FDE02C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4667630C9656EDDD"]
+			icon: "soulsweapons:lord_soul_red"
+			id: "1908F3903A63062B"
+			rewards: [
+				{
+					id: "4040A02BF03788AF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 10
+					id: "697A813FB8D24A6B"
+					item: "soulsweapons:soul_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Могучая душа падшего лидера и сердце разлагающегося демона. Вы освободили короля, который не мог умереть."
+			tasks: [
+				{
+					id: "22A32D00123EF149"
+					item: "soulsweapons:lord_soul_red"
+					type: "item"
+				}
+				{
+					id: "58C1FF26B3DF2670"
+					item: "soulsweapons:withered_demon_heart"
+					type: "item"
+				}
+			]
+			title: "Падение королевства"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1EDBB06BF4D86561"]
+			icon: "soulsweapons:lord_soul_dark"
+			id: "1EA2FE83DF292A85"
+			rewards: [
+				{
+					id: "1D8FC821FEE3F25E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 20
+					id: "58EFEB18308692E6"
+					item: "soulsweapons:silver_bullet"
+					type: "item"
+				}
+			]
+			subtitle: "Могучая душа великого чемпиона и могучая сущность призрака. Ты освободил мертвых, и теперь они пали обратно на землю, чтобы отдохнуть."
+			tasks: [
+				{
+					id: "306B22E67205A029"
+					item: "soulsweapons:lord_soul_dark"
+					type: "item"
+				}
+				{
+					id: "1EFEEBD259197A81"
+					item: "soulsweapons:essence_of_eventide"
+					type: "item"
+				}
+				{
+					entity: "soulsweapons:night_shade"
+					id: "20C6BB67A9E3EDF3"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "soulsweapons:draugr_boss"
+					id: "27A6B28ADA9285E2"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Экзорцизм"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3B0C386899373F73"]
+			icon: "soulsweapons:lord_soul_rose"
+			id: "31074978BAD2832F"
+			rewards: [{
+				id: "0F932F96667FA3CD"
+				type: "xp"
+				xp: 45
+			}]
+			subtitle: "Могущественная душа, находящаяся под контролем темной силы, и чистый лунный камень, излучающий мощную энергию. Но разве мы не могли сделать что-то еще?"
+			tasks: [
+				{
+					id: "748EE6B36DC033CD"
+					item: "soulsweapons:lord_soul_rose"
+					type: "item"
+				}
+				{
+					id: "78ED15E83254414C"
+					item: "soulsweapons:arkenstone"
+					type: "item"
+				}
+				{
+					entity: "soulsweapons:remnant"
+					id: "4B883D3F92DDFA4F"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "soulsweapons:dark_sorcerer"
+					id: "6028DB6595D54180"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "soulsweapons:returning_knight"
+					id: "2FF1E9C9EC578C5A"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "4C90AC71ADEC7F84"
+					item: "soulsweapons:essence_of_luminescence"
+					type: "item"
+				}
+				{
+					id: "70E809EC11437809"
+					item: "soulsweapons:altar_block"
+					type: "item"
+				}
+			]
+			title: "Падшая марионетка"
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["31074978BAD2832F"]
+			icon: "soulsweapons:lord_soul_white"
+			id: "2A44985BAF8FC85F"
+			rewards: [{
+				id: "022C667644B9E03C"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Вы вернули павшего рыцаря в его законное тело и теперь сразились с ним в его былой славе."
+			tasks: [
+				{
+					id: "513B98489CFD1402"
+					item: "soulsweapons:lord_soul_white"
+					type: "item"
+				}
+				{
+					entity: "soulsweapons:moonknight"
+					id: "0FA16B60F741D463"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "035914E166FBE82A"
+					item: "soulsweapons:arkenstone"
+					type: "item"
+				}
+			]
+			title: "Возмездие"
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7D2E63E7DC4FDF32"]
+			icon: "soulsweapons:lord_soul_void"
+			id: "4797F8F75E4E1EC2"
+			rewards: [{
+				id: "79069C9FB730673B"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Могущественная душа воплощения распада, Увядающего, и она сбросила осколок, излучающий хаотическую энергию, для чего он?"
+			tasks: [
+				{
+					id: "4058B9713C9B8505"
+					item: "soulsweapons:lord_soul_void"
+					type: "item"
+				}
+				{
+					id: "2DCC8A7D47931D55"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Бездна смотрит в ответ"
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			id: "6C70C60A96AC2862"
+			rewards: [{
+				id: "6E1C22073BFCCD99"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Могущественная душа последнего известного дракона в Крае. Теперь вы можете использовать его силу."
+			tasks: [{
+				id: "6977EF420975B77A"
+				item: "soulsweapons:lord_soul_purple"
+				type: "item"
+			}]
+			title: "Сущность Дракона"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FFB1706571FEA29"]
+			id: "3B71FB3AE821FA02"
+			rewards: [{
+				id: "5965491A3E622D8D"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Лунное кольцо наделяет своего владельца способностью на короткое время запускать магические волны, позволяя ему даже стрелять издалека, используя только руки."
+			tasks: [{
+				id: "0E4427FFDCF83625"
+				item: {
+					Count: 1b
+					id: "soulsweapons:moonstone_ring"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Луноход"
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "50A5E551E0CD8765"
+			rewards: [{
+				id: "384FFEBF715F8AD2"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Используя найденный вами лунный камень, вы решили проверить, сможете ли вы создать мощное оружие."
+			tasks: [
+				{
+					id: "591AB2A0E90CB276"
+					item: {
+						Count: 1b
+						id: "soulsweapons:bluemoon_shortsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2BE931C23BD724AA"
+					item: {
+						Count: 1b
+						id: "soulsweapons:bluemoon_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Имитация Луны"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["50A5E551E0CD8765"]
+			id: "6FFB1706571FEA29"
+			rewards: [{
+				id: "2023D2304B32AF15"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "После того, как в мечи была вложена могущественная душа, они, похоже, пробудились с силой луны."
+			tasks: [
+				{
+					id: "48DCD09A0A871EE1"
+					item: {
+						Count: 1b
+						id: "soulsweapons:moonlight_shortsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31E88B4250AF1603"
+					item: {
+						Count: 1b
+						id: "soulsweapons:moonlight_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Его не хватает.."
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6FFB1706571FEA29"]
+			id: "21911ABACED7FFA1"
+			rewards: [{
+				id: "4762BADCEF179F28"
+				type: "xp"
+				xp: 60
+			}]
+			subtitle: "Вы получили личное оружие и нагрудник рыцаря и теперь можете призывать силу луны как свою собственную."
+			tasks: [
+				{
+					id: "0EE46D035D5886AF"
+					item: {
+						Count: 1b
+						id: "soulsweapons:pure_moonlight_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1910E447A65C9C8D"
+					item: {
+						Count: 1b
+						id: "soulsweapons:arkenplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Наследие рыцаря"
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "7CF8A1A229D73A92"
+			rewards: [{
+				id: "51F0B6C338F30C65"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Этот меч интересен, он позволяет владельцу чувствовать находящихся поблизости врагов, возможно, он может быть полезен во время рейда?"
+			tasks: [{
+				id: "3330062EEDC11DBF"
+				item: {
+					Count: 1b
+					id: "soulsweapons:sting"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "ТРЕВОГА!"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7CF8A1A229D73A92"]
+			id: "5DCE51142E29CA7D"
+			rewards: [{
+				id: "49B547B73E7F5BC0"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Это оружие немного странное, при желании оно может трансформироваться в другое оружие с другими способностями."
+			tasks: [{
+				id: "6A3CBE5453333526"
+				item: {
+					Count: 1b
+					id: "soulsweapons:holy_moonlight_sword"
+					tag: {
+						Damage: 0
+						current_charge: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "2-в-1"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["731E965C4BF7565E"]
+			id: "7D2E63E7DC4FDF32"
+			subtitle: "Что должно заставить вас создать такой предмет? Призвать великого демона или что-то злое?"
+			tasks: [{
+				id: "60093F40E5DF21D0"
+				item: "soulsweapons:blackstone_pedestal"
+				type: "item"
+			}]
+			title: "Запах гниения уже близко..."
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C1F39A39A290603"]
+			id: "312B2DA72F1CFE6F"
+			subtitle: "Одеяние темного колдуна, наполненное силой душ, довольно прочное."
+			tasks: [
+				{
+					id: "5649B5CDF8BB6B50"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_robes_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A71F59AAFD3935A"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_robes_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "641B177AD45121D7"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_robes_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7168072F6467F5F5"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_robes_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Живые Одеяния"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C1F39A39A290603"]
+			hide_text_until_complete: false
+			id: "615E23C6448FD934"
+			subtitle: "Вы можете услышать, как души внутри доспехов проникают в металл, более прочный, чем железо."
+			tasks: [
+				{
+					id: "63E92BDC88AD4592"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_ingot_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B459A223EE30EF9"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_ingot_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "089071964A13E0AF"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_ingot_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E841A8AF66821B2"
+					item: {
+						Count: 1b
+						id: "soulsweapons:soul_ingot_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Живая броня, но не совсем"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5DFDAAA27B3775A3"]
+			id: "22D6C1F126B44D65"
+			rewards: [{
+				id: "7892653E45214C8E"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Эти бродячие демоны обитают в багровых лесах, бродя повсюду как пустые оболочки инстинкта убийства."
+			tasks: [{
+				entity: "soulsweapons:withered_demon"
+				id: "5709B569D6FC88A3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "В мои времена..."
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["22D6C1F126B44D65"]
+			id: "79EB51ACC5624106"
+			rewards: [{
+				id: "7A82CE50D79C1D70"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Сердце умирающего демона, все еще содержащее мощную жизненную силу, может быть, мы могли бы использовать его?"
+			tasks: [{
+				id: "71750199863537CD"
+				item: "soulsweapons:demon_heart"
+				type: "item"
+			}]
+			title: "Чувствуешь, как бьётся моё сердце?"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79EB51ACC5624106"]
+			id: "2E717252139F3121"
+			rewards: [{
+				id: "739B9E72CA135E4A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Концентрированная форма демонической жизненной силы, весьма отвратительная, если вдуматься."
+			tasks: [{
+				id: "264C335613C2E5DE"
+				item: "soulsweapons:demon_chunk"
+				type: "item"
+			}]
+			title: "Все идет от сердца"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E717252139F3121"]
+			id: "38B1E5E35DFDF751"
+			subtitle: "Слиток, сделанный из заряженных демонических сердец. Он излучает демоническую энергию, идеально подходит для снаряжения души."
+			tasks: [{
+				id: "12101826E4B0D9FB"
+				item: "soulsweapons:crimson_ingot"
+				type: "item"
+			}]
+			title: "Железное Сердце"
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2C1F39A39A290603"]
+			id: "643F26D2104DE762"
+			rewards: [{
+				id: "011D544972AE1916"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Мощная коса, созданная с использованием мощного металла души, чтобы создать оружие, олицетворяющее смерть. Призовите мертвых, чтобы они выполнили вашу волю."
+			tasks: [{
+				id: "12FCE823DC1B9709"
+				item: {
+					Count: 1b
+					id: "soulsweapons:soul_reaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Никто не может остановить смерть..."
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["643F26D2104DE762"]
+			id: "5BBEA076163E9742"
+			rewards: [{
+				id: "729F7422E9B8D154"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "Забытых элитных солдат можно встретить бродящими по Долине Песка Душ, но их можно призвать, чтобы они выполняли ваши приказы."
+			tasks: [{
+				entity: "soulsweapons:evil_forlorn"
+				id: "24632591264B1928"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Давно забыто..."
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5BBEA076163E9742"]
+			icon: {
+				Count: 1b
+				id: "soulsweapons:forlorn_scythe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2C8E7652FA14ED8F"
+			rewards: [{
+				id: "2D1E0ED6B133FCD9"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Снаряжение, которое можно найти только убив Злых Одиноких, упокоить их и запомнить."
+			tasks: [
+				{
+					id: "130983AA27EBCBA4"
+					item: {
+						Count: 1b
+						id: "soulsweapons:forlorn_scythe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "724E5AF7D3EE0217"
+					item: {
+						Count: 1b
+						id: "soulsweapons:forlorn_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "376CD00D16BFDAC0"
+					item: {
+						Count: 1b
+						id: "soulsweapons:forlorn_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EB5383ADD37BFBB"
+					item: {
+						Count: 1b
+						id: "soulsweapons:forlorn_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "484B99A403B988F8"
+					item: {
+						Count: 1b
+						id: "soulsweapons:forlorn_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Один из забытых"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "0BF11218B309BCF8"
+			rewards: [{
+				id: "50C342B011A0CC91"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Оружие, наносящее настоящий магический урон, зависящий от каждого уровня аспекта попадания и огня, но только свыше трети здоровья цели."
+			tasks: [{
+				id: "3C3EA4799654A7C5"
+				item: {
+					Count: 1b
+					id: "soulsweapons:lich_bane"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Пришло время чистки"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "5939BE272DC09B1C"
+			rewards: [{
+				id: "5D0DE18196275C1C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Копье с силой летящей кометы, готовое обрушиться на любую цель."
+			tasks: [{
+				id: "26236BC9E760C601"
+				item: {
+					Count: 1b
+					id: "soulsweapons:comet_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Падающая звезда"
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "08CA92A3CDF42F15"
+			rewards: [{
+				id: "330766C88F5A0AA4"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Хороший лук, который может увеличить скорость стрельбы по мере того, как тетива натягивается нерабочей рукой."
+			tasks: [{
+				id: "0BB2566384B8CB65"
+				item: {
+					Count: 1b
+					id: "soulsweapons:galeforce"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Беги как ветер"
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "245F218AF09E2AC3"
+			rewards: [{
+				id: "3F308F94DA8985CD"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "Простое, но эффективное оружие, которое становится сильнее с наступлением ночи."
+			tasks: [{
+				id: "1FBB3E61F002F6EF"
+				item: {
+					Count: 1b
+					id: "soulsweapons:draugr"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Ночь — моя сила"
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["38B1E5E35DFDF751"]
+			id: "15C10A8693E3DE56"
+			rewards: [{
+				id: "592EF0E21680296B"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "Оружие, содержащее демоническую энергию. Его единственная цель — исцелить владельца в обмен на кровь его целей."
+			tasks: [{
+				id: "1AAE21BC4558A2E2"
+				item: {
+					Count: 1b
+					id: "soulsweapons:bloodthirster"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Я хочу пить..."
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["15C10A8693E3DE56"]
+			id: "2475FA2D5A0C8854"
+			rewards: [{
+				id: "6F4A86C73839785D"
+				type: "xp"
+				xp: 35
+			}]
+			subtitle: "Оружие души, в котором заключена сила настоящего демона."
+			tasks: [{
+				id: "2A92003A9D6C3D9E"
+				item: {
+					Count: 1b
+					id: "soulsweapons:darkin_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "ТОГДА ПЛАТИ СВОЕЙ КРОВЬЮ!"
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["38B1E5E35DFDF751"]
+			id: "56006B58B4352E97"
+			rewards: [{
+				id: "3333B6332DC7FB8D"
+				type: "xp"
+				xp: 35
+			}]
+			subtitle: "Неразвитая коса, готовая собирать души, но какие души вы хотите собирать?"
+			tasks: [{
+				id: "159C32B1CD284732"
+				item: {
+					Count: 1b
+					id: "soulsweapons:darkin_scythe_pre"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Даже Весы!"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "41201D91E5306FCA"
+			rewards: [{
+				id: "5B18F19DE10492DE"
+				type: "xp"
+				xp: 35
+			}]
+			subtitle: "Сокрушительный топор, который замораживает врагов и заставляет их взрываться кусками льда после смерти."
+			tasks: [{
+				id: "441B3B29B090F522"
+				item: {
+					Count: 1b
+					id: "soulsweapons:leviathan_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Заморозить мир"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["38B1E5E35DFDF751"]
+			id: "779BDC14D8FF6F70"
+			rewards: [{
+				id: "66A2001AD204CCB6"
+				type: "xp"
+				xp: 35
+			}]
+			subtitle: "Очень своеобразный посох, который заставляет своего владельца рисковать ради эффектов, которые могут быть полезны или нет в сражениях владельца."
+			tasks: [{
+				id: "2D0F143F09693BD0"
+				item: {
+					Count: 1b
+					id: "soulsweapons:withered_wabbajack"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Поставьте свою жизнь на кон"
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "7B03C1492C12657E"
+			rewards: [{
+				id: "240654C195D911EC"
+				type: "xp"
+				xp: 35
+			}]
+			subtitle: "Личное оружие Тора, молот — разрушительное оружие, способное вызывать молнии."
+			tasks: [{
+				id: "693BD128F78FBEE5"
+				item: {
+					Count: 1b
+					id: "soulsweapons:mjolnir"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2C1F39A39A290603"]
+			hide_text_until_complete: false
+			id: "25CBEA200061244E"
+			rewards: [{
+				id: "4F8B79F0DCDE09BF"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "Сокрушительная булава, которой владел павший рыцарь и которая использовалась для призыва душ павших солдат."
+			tasks: [{
+				id: "264B1D976D37ADF7"
+				item: {
+					Count: 1b
+					id: "soulsweapons:nightfall"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Восстаньте, запятнанные души!"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["26C8BD551FCBAF73"]
+			id: "33D74677733BD8CD"
+			rewards: [{
+				id: "5EDD8BF166700A9C"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Легендарный меч, обладающий собственным разумом и способный сражаться за вас, не держа его в руках."
+			tasks: [{
+				id: "2382683DB44BBBD8"
+				item: {
+					Count: 1b
+					id: "soulsweapons:freyr_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "По Твоей Воле"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["56006B58B4352E97"]
+			id: "532AEC1657945F45"
+			rewards: [{
+				id: "545C65F1AF5E79C1"
+				type: "xp"
+				xp: 35
+			}]
+			subtitle: "Коса появилась в результате поглощения красных душ и позволяет владельцу исцеляться тем больше, чем больше он атакует монстров, когда способность не находится на перезарядке."
+			tasks: [{
+				id: "4F1CB2F7656D15FF"
+				item: {
+					Count: 1b
+					id: "soulsweapons:darkin_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Кровавый танцор"
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56006B58B4352E97"]
+			id: "07C02F8158472D7C"
+			subtitle: "Коса возникла в результате поглощения синих душ и позволяет владельцу увеличивать скорость и наносить урон в течение первых нескольких секунд боя."
+			tasks: [{
+				id: "56FE853A6653238B"
+				item: {
+					Count: 1b
+					id: "soulsweapons:shadow_assassin_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Среди теней"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4797F8F75E4E1EC2"]
+			id: "4B59515AB4B7234B"
+			rewards: [
+				{
+					id: "62FF0DBBAB1F43CF"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "38C2952273921E29"
+					item: "prominent:molten_remnant"
+					type: "item"
+				}
+			]
+			subtitle: "Опасный монстр, вызванный с пьедестала с помощью осколка, разлагает все, по чему ступит, Монарх Хаоса. Убей его и получи его личное снаряжение."
+			tasks: [
+				{
+					id: "364461D455F27A5D"
+					item: "soulsweapons:lord_soul_void"
+					type: "item"
+				}
+				{
+					entity: "soulsweapons:chaos_monarch"
+					id: "073109BDE345ACA6"
+					title: "Убить Монарха Хаоса"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "6EBA34B797CBB667"
+					item: {
+						Count: 1b
+						id: "soulsweapons:chaos_crown"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C9DDD39F9E3EEC1"
+					item: {
+						Count: 1b
+						id: "soulsweapons:chaos_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Запах разложения уже близко.."
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			id: "5DFDAAA27B3775A3"
+			rewards: [{
+				id: "1A0CCFC65B25B080"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "Здесь все начинается, с одного песка души. Вы готовы сражаться с опасными монстрами и зарабатывать собственное снаряжение души?"
+			tasks: [{
+				id: "0597F8507AAD83E8"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			title: "Все начинается"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["731E965C4BF7565E"]
+			icon: "soulsweapons:altar_block"
+			id: "3B0C386899373F73"
+			rewards: [{
+				id: "4EB3426DA9D6DD5E"
+				type: "xp"
+				xp: 40
+			}]
+			subtitle: "Здесь лежит павший рыцарь. Освободи его, положив потерянную душу на алтарь."
+			tasks: [{
+				id: "1E8CF29780FCE775"
+				item: "soulsweapons:altar_block"
+				type: "item"
+			}]
+			title: "Найдите Собор Воскресения Христова"
+			x: -3.5d
+			y: 4.0d
+		}
+	]
+	title: "&e Снаряжение: &7Оружие, подобное душе"
+}
